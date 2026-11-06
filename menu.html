@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Bliss - Our Menu</title>
+    <!-- استيراد خطوط Google - خط عصري وأنيق -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- استيراد أيقونات FontAwesome لسلة التسوق والنجوم -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- ربط ملف CSS الخارجي -->
+    <link rel="stylesheet" href="menu.css">
+</head>
+<body>
+
+    <!-- Header Section (الشريط العلوي) -->
+    <header>
+        <!-- <div class="logo">
+            <img src="https://via.placeholder.com/150x50?text=Sweet+Bliss" alt="Sweet Bliss Logo" class="logo-img">
+        </div> -->
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="menu.html" class="active">Menu</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="testimonial.html">Testimonials</a></li>
+                <li><a href="contact us.html">Contact</a></li>
+            </ul>
+        </nav>
+       <div class="header-icons">
+    <i class="fas fa-search"></i>
+
+    <a href="cart.html" class="menu-cart-btn">
+        <i class="fas fa-shopping-cart"></i>
+        <span id="cart-count">0</span>
+    </a>
+</div>
+    </header>
+
+    <!-- Hero Section (قسم البانر الوردي) -->
+    <!-- <section class="hero">
+        <div class="hero-content">
+            <h1>Our Menu <span class="heart-icon">♥</span></h1>
+            <p>A sweet selection of happiness</p>
+        </div>
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1576618148400-f54bed99fcfd?q=80&w=600&auto=format&fit=crop" alt="Delicious Cupcake" class="main-hero-img">
+        </div>
+    </section> -->
+
+    <!-- Menu Section (قسم القائمة والمنتجات) -->
+    <section class="menu-section">
+        <!-- أزرار تصفية المنتجات -->
+        <div class="filter-container">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="donuts">Donuts</button>
+            <button class="filter-btn" data-filter="cheesecake">Cheesecake</button>
+            <button class="filter-btn" data-filter="cupcakes">Cupcakes</button>
+            <button class="filter-btn" data-filter="brownies">Brownies</button>
+            <button class="filter-btn" data-filter="cookies">Cookies</button>
+            <button class="filter-btn" data-filter="macarons">Macarons</button>
+        </div>
+
+        <!-- شبكة المنتجات -->
+        <div class="product-grid" id="product-grid">
+            <!-- بطاقة المنتج 1 (Classic Donut) -->
+            <div class="product-card" data-category="donuts">
+                <div class="product-image">
+                    <img src="./image/donates.jpeg" alt="Classic Donut">
+                </div>
+                <div class="product-details">
+                    <h3>Classic Donut</h3>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <span>4.8</span> <span>(120)</span>
+                    </div>
+                    <div class="product-bottom">
+                        <span class="price">$3.00</span>
+                        <button class="add-to-cart-btn"><i class="fas fa-shopping-cart"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- بطاقة المنتج 2 (Strawberry Donut) -->
+            <div class="product-card" data-category="donuts">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1533134242443-d4fd215305ad?q=80&w=400&auto=format&fit=crop" alt="Strawberry Donut">
+                </div>
+                <div class="product-details">
+                    <h3>Strawberry Donut</h3>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <span>4.7</span> <span>(85)</span>
+                    </div>
+                    <div class="product-bottom">
+                        <span class="price">$3.00</span>
+                        <button class="add-to-cart-btn"><i class="fas fa-shopping-cart"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- بطاقة المنتج 3 (Chocolate Donut) -->
+            <div class="product-card" data-category="donuts">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1612240498936-65f5101365d2?q=80&w=400&auto=format&fit=crop" alt="Chocolate Donut">
+                </div>
+                <div class="product-details">
+                    <h3>Chocolate Donut</h3>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <span>4.9</span> <span>(95)</span>
+                    </div>
+                    <div class="product-bottom">
+                        <span class="price">$3.00</span>
+                        <button class="add-to-cart-btn"><i class="fas fa-shopping-cart"></i></button>
+                    </div>
+                </div>
+            </div>
+ <div class="product-card" data-category="donuts">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1612240498936-65f5101365d2?q=80&w=400&auto=format&fit=crop" alt="Chocolate Donut">
+                </div>
+                <div class="product-details">
+                    <h3>Chocolate Donut</h3>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <span>4.9</span> <span>(95)</span>
+                    </div>
+                    <div class="product-bottom">
+                        <span class="price">$3.00</span>
+                        <button class="add-to-cart-btn"><i class="fas fa-shopping-cart"></i></button>
+                    </div>
+                </div>
+            </div>
+
+             <div class="product-card" data-category="donuts">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1612240498936-65f5101365d2?q=80&w=400&auto=format&fit=crop" alt="Chocolate Donut">
+                </div>
+                <div class="product-details">
+                    <h3>Chocolate Donut</h3>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <span>4.9</span> <span>(95)</span>
+                    </div>
+                    <div class="product-bottom">
+                        <span class="price">$3.00</span>
+                        <button class="add-to-cart-btn"><i class="fas fa-shopping-cart"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- بطاقة المنتج 4 (New York Cheesecake) -->
+            <div class="product-card" data-category="cheesecake">
+                <div class="product-image">
+                    <img src="./image/cheescik.jpeg" alt="New York Cheesecake">
+                </div>
+                <div class="product-details">
+                    <h3>New York Cheesecake</h3>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <span>4.9</span> <span>(95)</span>
+                    </div>
+                    <div class="product-bottom">
+                        <span class="price">$6.50</span>
+                        <button class="add-to-cart-btn"><i class="fas fa-shopping-cart"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- بطاقة المنتج 5 (Blueberry Cheesecake) -->
+            <div class="product-card" data-category="cheesecake">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1505394033641-40c6ad1178d7?q=80&w=400&auto=format&fit=crop" alt="Blueberry Cheesecake">
+                </div>
+                <div class="product-details">
+                    <h3>Blueberry Cheesecake</h3>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <span>4.8</span> <span>(70)</span>
+                    </div>
+                    <div class="product-bottom">
+                        <span class="price">$6.50</span>
+                        <button class="add-to-cart-btn"><i class="fas fa-shopping-cart"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- بطاقة المنتج 6 (Oreo Cheesecake) -->
+            <div class="product-card" data-category="cheesecake">
+                <div class="product-image">
+                    <img src="./image/cheeiscack2.jpeg" alt="Oreo Cheesecake">
+                </div>
+                <div class="product-details">
+                    <h3>Oreo Cheesecake</h3>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <span>4.9</span> <span>(88)</span>
+                    </div>
+                    <div class="product-bottom">
+                        <span class="price">$6.50</span>
+                        <button class="add-to-cart-btn"><i class="fas fa-shopping-cart"></i></button>
+                    </div>
+                </div>
+            </div>
+
+             <div class="product-card" data-category="cheesecake">
+                <div class="product-image">
+ <img src="./image/cheescik.jpeg" alt="New York Cheesecake">
+                </div>
+                <div class="product-details">
+                    <h3>Oreo Cheesecake</h3>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <span>4.9</span> <span>(88)</span>
+                    </div>
+                    <div class="product-bottom">
+                        <span class="price">$6.50</span>
+                        <button class="add-to-cart-btn"><i class="fas fa-shopping-cart"></i></button>
+                    </div>
+                </div>
+            </div>
+
+             <div class="product-card" data-category="cheesecake">
+                <div class="product-image">
+               <img src="./image/cheeiscack2.jpeg" alt="Oreo Cheesecake">
+                </div>
+                <div class="product-details">
+                    <h3>Oreo Cheesecake</h3>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <span>4.9</span> <span>(88)</span>
+                    </div>
+                    <div class="product-bottom">
+                        <span class="price">$6.50</span>
+                        <button class="add-to-cart-btn"><i class="fas fa-shopping-cart"></i></button>
+                    </div>
+                </div>
+            </div>
+
+             <div class="product-card" data-category="cheesecake">
+                <div class="product-image">
+ <img src="./image/cheescik.jpeg" alt="New York Cheesecake">
+                </div>
+                <div class="product-details">
+                    <h3>Oreo Cheesecake</h3>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <span>4.9</span> <span>(88)</span>
+                    </div>
+                    <div class="product-bottom">
+                        <span class="price">$6.50</span>
+                        <button class="add-to-cart-btn"><i class="fas fa-shopping-cart"></i></button>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <!-- الترقيم الصفحي (Pagination) -->
+        <div class="pagination">
+            <div class="page-item active">1</div>
+            <div class="page-item">2</div>
+            <div class="page-item">3</div>
+            <div class="page-item next"><i class="fas fa-chevron-right"></i></div>
+        </div>
+    </section>
+
+    <!-- ربط ملف JavaScript الخارجي -->
+    <script src="menu.js"></script>
+</body>
+</html>

@@ -1,0 +1,167 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonials | Sweet Bliss</title>
+
+    <link rel="stylesheet" href="testimoial.css">
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header class="navbar">
+    <a href="home.html" class="logo">Sweet<span>Bliss</span></a>
+
+    <button class="menu-toggle" id="menuToggle">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <nav id="mainNav">
+        <a href="home.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="about.html">About</a>
+        <a href="testimonials.html" class="active">Testimonials</a>
+        <a href="contact us.html">Contact</a>
+    </nav>
+
+    <a href="cart.html" class="cart-icon">
+        <i class="fas fa-shopping-cart"></i>
+        <span id="cartCount">0</span>
+    </a>
+</header>
+
+<!-- Hero -->
+<section class="hero">
+    <div class="hero-content">
+        <span class="subtitle">SWEET WORDS FROM OUR CUSTOMERS</span>
+        <h1>Happiness tastes <em>better together.</em></h1>
+        <p>
+            Every little review means the world to us.
+            Discover what makes our treats a part of your sweetest moments.
+        </p>
+        <a href="#reviews" class="main-btn">Read Reviews <i class="fas fa-arrow-down"></i></a>
+    </div>
+
+    <div class="hero-image">
+        <img src="./image/donates.jpeg" alt="Delicious donuts">
+        <div class="floating-card">
+            <i class="fas fa-heart"></i>
+            Made with love
+        </div>
+    </div>
+</section>
+
+<!-- Rating Summary -->
+<section class="rating-section">
+    <div>
+        <span class="subtitle">THE LOVE IS REAL</span>
+        <h2>Sweet words, happy hearts.</h2>
+    </div>
+
+    <div class="rating-info">
+        <strong>4.9</strong>
+        <div>
+            <div class="stars">★★★★★</div>
+            <p>Our sample customer rating</p>
+        </div>
+    </div>
+</section>
+
+<!-- Reviews -->
+<section class="reviews-section" id="reviews">
+    <div class="section-heading">
+        <div>
+            <span class="subtitle">KIND WORDS</span>
+            <h2>What Our Customers Say</h2>
+            <p>A little sweetness, told in their own words.</p>
+        </div>
+
+        <select id="ratingFilter">
+            <option value="all">All Reviews</option>
+            <option value="5">5 Stars</option>
+            <option value="4">4 Stars</option>
+            <option value="3">3 Stars</option>
+        </select>
+    </div>
+
+    <div class="reviews-grid" id="reviewsGrid"></div>
+
+    <p class="demo-note">
+        These reviews are sample content for demonstration. Replace them with real customer feedback.
+    </p>
+</section>
+
+<!-- Add Review -->
+<section class="add-review-section">
+    <div class="review-intro">
+        <span class="subtitle">YOUR TURN</span>
+        <h2>Had a sweet experience?</h2>
+        <p>
+            We'd love to hear about it!
+            Share your experience and help others discover their favorite treats.
+        </p>
+        <i class="fas fa-heart"></i>
+        Thank you for supporting our little bakery.
+    </div>
+
+    <form id="reviewForm">
+        <h3>Share Your Experience</h3>
+
+        <label for="customerName">Your Name</label>
+        <input type="text" id="customerName" placeholder="Enter your name" required maxlength="40">
+
+        <label>Your Rating</label>
+        <div class="star-picker" id="starPicker">
+            <button type="button" data-rating="1">★</button>
+            <button type="button" data-rating="2">★</button>
+            <button type="button" data-rating="3">★</button>
+            <button type="button" data-rating="4">★</button>
+            <button type="button" data-rating="5">★</button>
+        </div>
+
+        <input type="hidden" id="selectedRating" value="5">
+
+        <label for="productName">Product</label>
+        <select id="productName">
+            <option value="Sweet Bliss Treats">Choose a product</option>
+            <option value="Donuts">Donuts</option>
+            <option value="Cheesecake">Cheesecake</option>
+            <option value="Cupcakes">Cupcakes</option>
+            <option value="Brownies">Brownies</option>
+            <option value="Other">Other</option>
+        </select>
+
+        <label for="reviewText">Your Review</label>
+        <textarea id="reviewText" rows="4" placeholder="Write your experience..." required maxlength="350"></textarea>
+
+        <button type="submit" class="main-btn submit-btn">
+            Post My Review <i class="fas fa-paper-plane"></i>
+        </button>
+
+        <p id="formMessage"></p>
+        <small>Demo version: reviews are saved in this browser only.</small>
+    </form>
+</section>
+
+<!-- Footer -->
+<footer>
+    <a href="home.html" class="footer-logo">Sweet<span>Bliss</span></a>
+    <p>Little treats. Big moments. Made with love.</p>
+
+    <div class="social-icons">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-tiktok"></i></a>
+    </div>
+
+    <small>© <span id="currentYear"></span> Sweet Bliss. All rights reserved.</small>
+</footer>
+
+<script src="testimoial.jsl"></script>
+</body>
+</html>
