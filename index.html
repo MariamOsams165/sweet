@@ -1,0 +1,328 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Bliss - Sweets Make Life Sweeter</title>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+ <header class="navbar">
+
+    <!-- Logo -->
+    <div class="logo">
+        <i class="fa-solid fa-cookie-bite logo-icon"></i>
+
+        <div class="logo-text">
+            <span class="brand-name">Sweet Bliss</span>
+            <span class="tagline">Sweets Make Life Sweeter ♡</span>
+        </div>
+    </div>
+
+    <!-- Navigation Links -->
+    <nav class="nav-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="about.html">About</a>
+        <a href="testimonial.html">Testimonials</a>
+        <a href="contact us.html">Contact</a>
+    </nav>
+
+    <!-- Navigation Actions -->
+    <div class="nav-actions">
+
+        <!-- Search -->
+        <button class="search-btn" type="button">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+
+        <!-- Shopping Cart -->
+        <a href="cart.html" class="cart-btn" aria-label="Shopping Cart">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span id="cart-count">0</span>
+        </a>
+
+        <!-- Order Now -->
+        <a href="menu.html" class="order-now-btn">
+            <i class="fa-solid fa-cart-shopping"></i>
+            Order Now
+        </a>
+
+    </div>
+
+</header>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-text">
+            <h1>Life is Better with <span>Sweets ♡</span></h1>
+            <p>Indulge in our delicious treats — donuts, cheesecake, cupcakes and more!</p>
+           <a href="menu.html" class="btn-primary">
+    Order Now <i class="fa-solid fa-arrow-right"></i>
+</a>
+        </div>
+        <div class="hero-image-container">
+            <img src="./image/background.jpeg" alt="Delicious Sweets Assortment" class="hero-img " >
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories-section">
+        <div class="section-title">
+            <h2>Our<br>Categories</h2>
+        </div>
+        <div class="categories-container">
+            <div class="category-card">
+                <img src="./image/donates.jpeg" alt="Donuts">
+                <span>Donuts</span>
+            </div>
+            <div class="category-card">
+                <img src="https://images.unsplash.com/photo-1533134242443-d4fd215305ad?auto=format&fit=crop&w=150&q=80" alt="Cheesecake">
+                <span>Cheesecake</span>
+            </div>
+            <div class="category-card">
+                <img src="https://images.unsplash.com/photo-1576618148400-f54bed99fcfd?auto=format&fit=crop&w=150&q=80" alt="Cupcakes">
+                <span>Cupcakes</span>
+            </div>
+            <div class="category-card">
+                <img src="./image/donates.jpeg" alt="Donuts">
+                <span>Donuts</span>
+            </div>
+            <div class="category-card">
+                <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=150&q=80" alt="Brownies">
+                <span>Brownies</span>
+            </div>
+            <div class="category-card">
+                <img src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?auto=format&fit=crop&w=150&q=80" alt="Cookies">
+                <span>Cookies</span>
+            </div>
+             <div class="category-card">
+                <img src="https://images.unsplash.com/photo-1533134242443-d4fd215305ad?auto=format&fit=crop&w=150&q=80" alt="Cheesecake">
+                <span>Cheesecake</span>
+            </div>
+            <div class="category-card">
+                <img src="https://images.unsplash.com/photo-1569864358642-9d1684040f43?auto=format&fit=crop&w=150&q=80" alt="Macarons">
+                <span>Macarons</span>
+            </div>
+             <div class="category-card">
+                <img src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?auto=format&fit=crop&w=150&q=80" alt="Cookies">
+                <span>Cookies</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Favorites Section -->
+    <section class="favorites-section" id="menu">
+        <div class="favorites-header">
+            <h2>Our Favorites</h2>
+            <a href="#" class="view-all">View All <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="products-grid">
+            <!-- Product 1 -->
+           <div class="product-card">
+    <img src="./image/capcack2.jpeg"
+         alt="Classic Donut">
+
+    <div class="product-info">
+        <h3>Classic Donut</h3>
+
+        <div class="rating">
+            <i class="fa-solid fa-star"></i> 4.8 <span>(120)</span>
+        </div>
+
+        <div class="product-bottom">
+            <span class="price">$3.00</span>
+
+            <button class="add-to-cart"
+                data-id="1"
+                data-name="Classic Donut"
+                data-price="3"
+                data-image="https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?auto=format&fit=crop&w=400&q=80">
+
+                <i class="fa-solid fa-cart-shopping"></i>
+                Add to Cart
+            </button>
+        </div>
+    </div>
+</div>
+            <!-- Product 2 -->
+           <div class="product-card">
+    <img src="https://images.unsplash.com/photo-1533134242443-d4fd215305ad?auto=format&fit=crop&w=400&q=80"
+         alt="New York Cheesecake">
+
+    <div class="product-info">
+        <h3>New York Cheesecake</h3>
+
+        <div class="rating">
+            <i class="fa-solid fa-star"></i> 4.9 <span>(95)</span>
+        </div>
+
+        <div class="product-bottom">
+            <span class="price">$6.50</span>
+
+            <button class="add-to-cart"
+                data-id="2"
+                data-name="New York Cheesecake"
+                data-price="6.50"
+                data-image="https://images.unsplash.com/photo-1533134242443-d4fd215305ad?auto=format&fit=crop&w=400&q=80">
+
+                <i class="fa-solid fa-cart-shopping"></i>
+                Add to Cart
+
+            </button>
+        </div>
+    </div>
+</div>
+            <!-- Product 3 -->
+           <div class="product-card">
+    <img src="https://images.unsplash.com/photo-1576618148400-f54bed99fcfd?auto=format&fit=crop&w=400&q=80"
+         alt="Chocolate Cupcake">
+
+    <div class="product-info">
+        <h3>Chocolate Cupcake</h3>
+
+        <div class="rating">
+            <i class="fa-solid fa-star"></i> 4.8 <span>(78)</span>
+        </div>
+
+        <div class="product-bottom">
+            <span class="price">$4.50</span>
+
+            <button class="add-to-cart"
+                data-id="3"
+                data-name="Chocolate Cupcake"
+                data-price="4.50"
+                data-image="https://images.unsplash.com/photo-1576618148400-f54bed99fcfd?auto=format&fit=crop&w=400&q=80">
+
+                <i class="fa-solid fa-cart-shopping"></i>
+                Add to Cart
+            </button>
+        </div>
+    </div>
+</div>
+            <!-- Product 4 -->
+          <div class="product-card">
+    <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=400&q=80"
+         alt="Fudgy Brownie">
+
+    <div class="product-info">
+        <h3>Fudgy Brownie</h3>
+
+        <div class="rating">
+            <i class="fa-solid fa-star"></i> 4.9 <span>(110)</span>
+        </div>
+
+        <div class="product-bottom">
+            <span class="price">$4.00</span>
+
+            <button class="add-to-cart"
+                data-id="4"
+                data-name="Fudgy Brownie"
+                data-price="4.00"
+                data-image="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=400&q=80">
+
+                <i class="fa-solid fa-cart-shopping"></i>
+                Add to Cart
+            </button>
+        </div>
+    </div>
+</div>
+        </div>
+    </section>
+
+    <!-- About & Testimonials Wrapper Section -->
+    <section class="about-testimonials-wrapper">
+        <!-- About Section -->
+        <div class="about-card" id="about">
+            <div class="about-img">
+                <img src="https://images.unsplash.com/photo-1587314168485-3236d6710814?auto=format&fit=crop&w=400&q=80" alt="About Sweet Bliss">
+            </div>
+            <div class="about-content">
+                <h3>About Sweet Bliss</h3>
+                <p>We are a small dessert shop with a big passion for sweets. We use the finest ingredients to create delightful treats that bring happiness in every bite. ♡</p>
+               <a href="about.html" class="btn-primary-sm">
+    Learn More <i class="fa-solid fa-arrow-right"></i>
+</a>
+            </div>
+        </div>
+
+        <!-- Testimonials Section -->
+        <div class="testimonials-card" id="testimonials">
+            <h3>What Our Customers Say</h3>
+            <div class="testimonial-slider">
+                <button class="slider-arrow prev-btn"><i class="fa-solid fa-chevron-left"></i></button>
+                <div class="testimonial-content">
+                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=100&q=80" alt="Sarah M." class="user-avatar">
+                    <div class="testimonial-text">
+                        <p>"Absolutely delicious! The donuts are amazing and the cheesecake is to die for!"</p>
+                        <span>— Sarah M.</span>
+                    </div>
+                </div>
+                <button class="slider-arrow next-btn"><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+            <div class="slider-dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+        <div class="newsletter-left">
+            <i class="fa-regular fa-envelope envelope-icon"></i>
+            <div>
+                <h4>Get Sweet Updates!</h4>
+                <p>Subscribe to our newsletter for new treats and special offers.</p>
+            </div>
+        </div>
+        <form class="newsletter-form" id="newsletterForm">
+            <input type="email" placeholder="Enter your email address" required>
+            <button type="submit">Subscribe</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="footer-logo">
+            <i class="fa-solid fa-cookie-bite footer-icon"></i>
+            <div>
+                <span class="footer-brand">Sweet Bliss</span>
+                <p>Sweets Make Life Sweeter ♡</p>
+            </div>
+        </div>
+        
+        <ul class="footer-nav">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="social-links">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+
+        <div class="copyright">
+            © 2026 Sweet Bliss. All rights reserved.
+        </div>
+    </footer>
+
+    <!-- External JS -->
+    <script src="home.js"></script>
+</body>
+</html>
+<!-- ظظظظظظظظظظظظظظظظظظظظظظظظظظظظظظظظظظظظظظظظظظظظظظظظظظظظظظظظظظظظظظظظظظ -->
